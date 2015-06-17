@@ -27,8 +27,11 @@ img {
   z-index: 1;
   & .navbar-nav {
     float: right;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       text-align: right;
+      border-radius: 10px;
+      background-color: rgba(252,255,25,0.42);
+      padding-top: 3px;
     }
       & .dropdown.open a {
         border-bottom-left-radius: 0;
@@ -90,7 +93,30 @@ img {
     background-color: @color-yellow;
   }
 }
-
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    margin-top: 0;
+    margin-left: 4px;
+    margin-right: 4px;
+    background-color: @color-yellow;
+    border-top-right-radius: 0 !important;
+    & li a {
+      color: #000;
+      &:hover {
+        background: lighten(@color-yellow, 30%);
+      }
+    }
+  }
+}
+.navbar-default .navbar-toggle {
+  border-color: @color-yellow;
+  & .icon-bar {
+    background-color: @color-yellow;
+  }
+  &:hover, &:focus {
+    background-color: rgba(252, 255, 25, .2);
+  }
+}
 
 /*===== Basketus Animatus :D =====*/
 
@@ -281,6 +307,9 @@ img {
     & .container {
       width: 100% !important;
       margin: 0;
+        & .row img {
+          width: 100%;
+        }
     }
   }
 
@@ -346,21 +375,44 @@ img {
   background-color: @color-yellow;
     & .navbar-footer {
       margin-bottom: 0;
-      height: 70px;
+        & .navbar-header {
+          @media (max-width: 767px) {
+            text-align: center;
+          }
+        }
         & .navbar-brand {
           padding: 0;
+          @media (max-width: 767px) {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
         }
         & .navbar-brand>img {
           margin-top: 17px;
+          @media (max-width: 767px) {
+            text-align: center;
+            margin: auto;
+          }
         }
     }
     & .navbar-nav {
       float: right;
       margin-right: -10px;
+      @media (max-width: 767px) {
+        float: none;
+        margin: auto;
+      }
       & li {
         height: 70px;
         padding-left: 15px;
         line-height: 70px;
+          @media (max-width: 767px) {
+            line-height: 2;
+            height: auto;
+            text-align: center;
+            padding-left: 0;
+          }
       }
       & li>a {
         color: #000;
@@ -372,7 +424,10 @@ img {
         line-height: 1;
         display: inline-block;
         border-radius: 5px;
-
+          @media (max-width: 767px) {
+            text-align: center;
+            height: auto;
+          }
           &:hover {
             color: @color-yellow;
             background-color: #000;
