@@ -2,6 +2,7 @@
 <project version="4">
   <component name="LessManager">
     <option name="deleteCssFiles" value="false" />
+    <option name="promptOnDelete" value="false" />
     <option name="lessProfileMap">
       <map>
         <entry key="0">
@@ -24,6 +25,7 @@
       </map>
     </option>
     <option name="deleteCssFiles" value="false" />
+    <option name="promptOnDelete" value="false" />
   </component>
 </project>
 
