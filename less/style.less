@@ -222,25 +222,22 @@ img {
     background: none;
   }
 }
-.carousel-control .glyphicon-chevron-left {
+.carousel .carousel-control .glyphicon-chevron-left,
+.carousel .carousel-control .glyphicon-chevron-right {
   width: 58px;
   height: 58px;
-  background-image: url('../img/left_arrow.png');
   background-position: 50%, 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  left: 10%;
   top: 48.6%;
 }
 .carousel-control .glyphicon-chevron-right {
-  width: 58px;
-  height: 58px;
   background-image: url('../img/right_arrow.png');
-  background-position: 50%, 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
   right: 10%;
-  top: 48.6%;
+}
+.carousel-control .glyphicon-chevron-left {
+  background-image: url('../img/left_arrow.png');
+  left: 10%;
 }
 .glyphicon-chevron-left:before,
 .glyphicon-chevron-right:before {
@@ -253,7 +250,7 @@ img {
   right: 0;
   bottom: 33px;
   margin: auto;
-  max-width: 50px;
+  width: 60px;
 }
 /*===== Categories Section =====*/
 
@@ -491,6 +488,11 @@ img {
       }
     }
   }
+}
+/*===== For FF form =====*/
+
+.bs-form-horizontal + .form-group {
+  clear: both;
 }
 
 /*===== Footer Section =====*/

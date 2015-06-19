@@ -1,0 +1,17 @@
+.bs-slider {
+    height: 650px;
+    position: relative;
+}
+.carousel-inner .item img {
+    height: 650px;
+    width: 100%;
+}
+.bs-slider .carousel-indicators {
+    bottom: 0;
+}
+.bs-bike-form form select {
+    background-image: none !important;
+}
+.bs-ie8-margin-left {
+    margin-left: 26px;
+}
